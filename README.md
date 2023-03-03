@@ -1,10 +1,11 @@
 # sentimentalAnalysis
 
-"""
 This is a sentiment analysis demo using [OpenAI API](https://openai.com/). 
+
 The web app is hosted on [streamlit cloud](https://streamlit.io/cloud). 
+
 You may get the codes [HERE](https://github.com/richieyuyongpoh/sentimentalAnalysis). 
-"""
+
 
 For more information, please contact:
 
