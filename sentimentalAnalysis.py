@@ -17,19 +17,14 @@ if readme:
     st.write ("For more info, please contact:")
     st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
     
-    
-if 'messages' not in st.session_state:
-    st.session_state['messages'] = [
-            {"role": "system", "content": "Your name is Jane, Yong Poh's personal assistant. You are an expert who always provides consultation on sentimental analysis. For sentiment of a statement, You reply two words: sentimental type (positive, neutral, negative) and score (ranging from +1 to -1)"},
-            {"role": "user", "content": "Fuck you! It is a bad day!"},
-            {"role": "assistant", "content": "Sentiment: Negative  Score: -1"}]
+
 
 openai.api_key = st.secrets["api_secret"] 
 
 def generate_response(prompt):
   
     init_messages = [
-        {"role": "system", "content": "Your name is Jane, Yong Poh's personal assistant. You are an expert who always provides consultation on sentimental analysis. For sentiment of a statement, You reply two words: sentimental type (positive, neutral, negative) and score (ranging from +1 to -1)"},
+        {"role": "system", "content": "You only do sentimental analysis. For any statements provided by the users, You reply two words: sentimental type (positive, neutral, negative) and score (ranging from +1 to -1)"},
         {"role": "user", "content": "Fuck you! It is a bad day!"},
         {"role": "assistant", "content": "Sentiment: Negative  Score: -1"},
         {"role": "user", "content": prompt}]
