@@ -1,6 +1,6 @@
 # sentimentalAnalysis
 
-This is a sentiment analysis demo using [OpenAI API](https://openai.com/). 
+This is a sentiment analysis demo using [OpenAI ChatGPT API](https://openai.com/). 
 
 The web app is hosted on [streamlit cloud](https://streamlit.io/cloud). 
 
