@@ -29,7 +29,7 @@ def generate_response(prompt):
     init_messages = [
         {"role": "system", "content": "You only do sentimental analysis. For any statements provided by the users, You reply two words: sentimental type (positive, neutral, negative) and score (ranging from +1 to -1)"},
         {"role": "user", "content": "Fuck you! It is a bad day!"},
-        {"role": "assistant", "content": "Sentiment: Negative  Score: -1"},
+        {"role": "assistant", "content": "Sentiment: Negative ; Score: -1"},
         {"role": "user", "content": prompt}]
   
     response = openai.ChatCompletion.create(
