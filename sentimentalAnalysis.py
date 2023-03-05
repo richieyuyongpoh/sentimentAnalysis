@@ -17,7 +17,10 @@ if readme:
     st.write ("For more info, please contact:")
     st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
     
+st.write("Instruction:")
+st.write("")
 
+st.write("Type the statement in the following textbox. The AI assistant, Jane will give you the sentiment type and score.")
 
 openai.api_key = st.secrets["api_secret"] 
 
