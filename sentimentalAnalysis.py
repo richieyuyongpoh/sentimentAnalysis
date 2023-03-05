@@ -25,6 +25,8 @@ if 'messages' not in st.session_state:
             {"role": "user", "content": "Fuck you! It is a bad day!"},
             {"role": "assistant", "content": "Sentiment: Negative  Score: -1"}]
 
+openai.api_key = st.secrets["api_secret"] 
+
 def generate_response(prompt):
   
     st.session_state['messages'].append({"role": "user", "content": prompt})
