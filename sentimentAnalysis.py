@@ -12,7 +12,7 @@ if readme:
     st.write("""
         This is a sentiment analysis demo using [ChatGPT API](https://openai.com/). 
         The web app is hosted on [streamlit cloud](https://streamlit.io/cloud). 
-        You may get the codes [HERE](https://github.com/richieyuyongpoh/sentimentalAnalysis). 
+        You may get the codes [HERE](https://github.com/richieyuyongpoh/sentimentAnalysis). 
         """)
     st.write ("For more info, please contact:")
     st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
@@ -27,7 +27,7 @@ openai.api_key = st.secrets["api_secret"]
 def generate_response(prompt):
   
     init_messages = [
-        {"role": "system", "content": "You only do sentimental analysis. For any statements provided by the users, You reply two words: sentimental type (positive, neutral, negative) and score (ranging from +1 to -1)"},
+        {"role": "system", "content": "You only do sentiment analysis. For any statements provided by the users, You reply two words: sentiment type (positive, neutral, negative) and score (ranging from +1 to -1)"},
         {"role": "user", "content": "Fuck you! It is a bad day!"},
         {"role": "assistant", "content": "Sentiment: Negative ; Score: -1"},
         {"role": "user", "content": prompt}]
