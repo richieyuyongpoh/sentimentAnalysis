@@ -1,4 +1,4 @@
-# sentimentalAnalysis
+# sentiment Analysis
 
 This is a sentiment analysis demo using [OpenAI ChatGPT API](https://openai.com/). 
 
