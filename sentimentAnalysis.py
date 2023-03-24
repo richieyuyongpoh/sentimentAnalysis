@@ -12,7 +12,6 @@ if readme:
     st.write("""
         This is a sentiment analysis demo using [ChatGPT API](https://openai.com/). 
         The web app is hosted on [streamlit cloud](https://streamlit.io/cloud). 
-        You may get the codes [HERE](https://github.com/richieyuyongpoh/sentimentAnalysis). 
         """)
     st.write ("For more info, please contact:")
     st.write("<a href='https://www.linkedin.com/in/yong-poh-yu/'>Dr. Yong Poh Yu </a>", unsafe_allow_html=True)
